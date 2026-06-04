@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariane Fine Porcelain - HORECA Elite Tableware</title>
+    <meta name="description" content="Discover exquisite European craftsmanship with Ariane Fine Porcelain. Luxuriously crafted tableware tailored for the HORECA industry.">
+    <!-- Google Fonts: Syne (bold headings), Space Mono (accent labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="top-progress"></div>
+    </div>
+
+    <!-- Glassmorphic Preloader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">ARIANE<span class="dot-accent">.</span></div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill" id="loader-bar"></div>
+            </div>
+            <div class="loader-text" id="loader-text">Loading Experience...</div>
+        </div>
+    </div>
+
+    <!-- Fixed Header -->
+    <header>
+        <a href="#" class="logo">ARIANE<span class="dot-accent">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#section-1" class="nav-item active" data-section="0">Clay Purity</a></li>
+            <li><a href="#section-2" class="nav-item" data-section="1">Molding</a></li>
+            <li><a href="#section-3" class="nav-item" data-section="2">Vitrification</a></li>
+            <li><a href="#section-4" class="nav-item" data-section="3">Teapot Masterpiece</a></li>
+        </ul>
+        <a href="#section-4" class="btn-cta">Explore Collections</a>
+    </header>
+
+    <!-- Side Dot HUD Navigation -->
+    <div class="hud-element side-nav">
+        <a href="#section-1" class="dot-wrapper active" data-section="0">
+            <span class="dot-label">01 // CLAY PURITY</span>
+            <div class="dot"></div>
+        </a>
+        <a href="#section-2" class="dot-wrapper" data-section="1">
+            <span class="dot-label">02 // PRECISION MOLDING</span>
+            <div class="dot"></div>
+        </a>
+        <a href="#section-3" class="dot-wrapper" data-section="2">
+            <span class="dot-label">03 // VITRIFIED GLAZE</span>
+            <div class="dot"></div>
+        </a>
+        <a href="#section-4" class="dot-wrapper" data-section="3">
+            <span class="dot-label">04 // TEAPOT MASTERPIECE</span>
+            <div class="dot"></div>
+        </a>
+    </div>
+
+    <!-- Scroll Helper Indicator -->
+    <div class="hud-element scroll-indicator" id="scroll-prompt">
+        <span class="mono-label">Scroll to Explore</span>
+        <div class="chevron"></div>
+    </div>
+
+    <!-- Sticky Canvas Background Container -->
+    <div class="canvas-container">
+        <canvas id="animation-canvas"></canvas>
+    </div>
+
+    <!-- Scrollable content wrapper containing 4 trigger sections -->
+    <div class="scroll-wrapper">
+        
+        <!-- Section 1 (Folder 1) -->
+        <section id="section-1" class="scroll-section">
+            <div class="section-content">
+                <div class="text-group" id="text-g1">
+                    <div class="pill-tags">
+                        <span class="pill-tag pink-fill">RAW SILICA & KAOLIN</span>
+                        <span class="pill-tag outline">HIGH-ALUMINA</span>
+                    </div>
+                    <h2>PURE <span>IVORY.</span></h2>
+                    <h3 class="mono-slogan">Alumina-Rich Clay Base</h3>
+                    <p>Crafted with premium European raw materials, our high-alumina clay base provides unparalleled durability and a luxurious ivory tone tailored for high-volume hospitality.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 (Folder 2) -->
+        <section id="section-2" class="scroll-section">
+            <div class="section-content">
+                <div class="text-group" id="text-g2">
+                    <div class="pill-tags">
+                        <span class="pill-tag pink-fill">ISOSTATIC PRESSING</span>
+                        <span class="pill-tag outline">THERMAL RESISTANT</span>
+                    </div>
+                    <h2>PRECISION <span>MOLDING.</span></h2>
+                    <h3 class="mono-slogan">Perfect Density & Shape</h3>
+                    <p>Fired using advanced mechanical shaping to guarantee high thermal shock resistance and perfect stackability, saving valuable kitchen space.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 (Folder 3) -->
+        <section id="section-3" class="scroll-section">
+            <div class="section-content">
+                <div class="text-group" id="text-g3">
+                    <div class="pill-tags">
+                        <span class="pill-tag outline">HIGH-GLOSS COATING</span>
+                        <span class="pill-tag pink-fill">DOUBLE-FIRED AT 1400°C</span>
+                    </div>
+                    <h2>VITRIFIED <span>GLAZE.</span></h2>
+                    <h3 class="mono-slogan">100% Hygienic & Scratch-Safe</h3>
+                    <p>Double-fired to create an impervious, lead-free surface resistant to metal marking, commercial dishwashing, and chipping.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 (Folder 4) -->
+        <section id="section-4" class="scroll-section">
+            <div class="section-content">
+                <div class="text-group" id="text-g4">
+                    <div class="pill-tags">
+                        <span class="pill-tag pink-fill">THE MASTERPIECE</span>
+                        <span class="pill-tag outline">BONE-ASH FREE</span>
+                    </div>
+                    <h2>ARIANE <span>TABLEWARE.</span></h2>
+                    <h3 class="mono-slogan">Aesthetic & Strength Combined</h3>
+                    <p>Experience tableware that elevates gastronomy. Lead & cadmium safe, halal certified, and vegetarian society approved (100% vegetarian).</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- Core Script -->
+    <script src="app.js"></script>
+</body>
+</html>
